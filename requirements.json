@@ -1,0 +1,35 @@
+{
+  "project_name": "نظام إدارة قواعد بيانات مستخدمين",
+  "project_type": "school_management",
+  "color_palette": "slate-900 and indigo-500",
+  "modules": [
+    "users",
+    "roles",
+    "permissions"
+  ],
+  "pages": [
+    "index",
+    "login",
+    "register",
+    "list_users",
+    "create_user",
+    "edit_user",
+    "delete_user"
+  ],
+  "permissions": {
+    "guest": [
+      "index"
+    ],
+    "user": [
+      "index",
+      "list_users"
+    ],
+    "admin": [
+      "index",
+      "list_users",
+      "create_user",
+      "edit_user",
+      "delete_user"
+    ]
+  }
+}
